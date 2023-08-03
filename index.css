@@ -21,7 +21,7 @@ body, header, footer {
     height: 100%;
     width: 100%;
     margin: 0;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
 }
 
 
@@ -179,17 +179,16 @@ p.sub_carousel {
 }
 .contenido_somos {
     display: inline-flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     padding: 1rem;
-    gap: 3rem;
     width: 100%;
-
-
 }
 .texto_somos {
-    max-width: 40rem;
+    max-width: 35rem;
+    padding: 0 3rem 0 0 ;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -215,10 +214,10 @@ div#empresas {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    gap: 1em;
 }
 
-span {
+span.contenedor_img {
     background-color: rgba(240, 240, 240, 1);
     width: 13rem;
     height: 9rem;
@@ -264,7 +263,7 @@ p.contenido_servicios {
     font-weight: lighter;
     padding: 1rem;
     text-align: center;
-    max-width: 40rem;
+    max-width: 35rem;
 }
 
 p.contenido_soporte {
@@ -277,6 +276,9 @@ div.tipo_servicio{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+div.tipo_servicio.proveedor {
+    flex-direction: row-reverse;
 }
 
 .contenido_servicios {
@@ -303,10 +305,11 @@ div#soporte {
     align-content: center;
     justify-content: center;
   
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 2rem 9rem; 
-    margin: 0;
+    margin: 2rem 0;
 }
+
 
 
 .sub_soporte {
@@ -319,26 +322,25 @@ div#soporte {
     flex-direction: column;
     width: 16em;
     text-align: center;
-    padding: .3em;
+    padding: .5em;
 }
 .img_tipo_soporte {
-    width: 9em;
+    width: 8em;
 }
 
 
 /* MARCAS */
 #marcas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     justify-items: center;
-    width: 80%;
-    margin: 3rem 0;
+    width: 100%;
+    padding: 2rem;
 }
 .marca {
-    padding: .5em 0;
+    padding: 0;
 }
 .marca img {
     width: 10rem;
@@ -489,8 +491,9 @@ footer {
 
     gap: 1em;
 }
+
 /* ANIMACIONES */
-[data-animation="fade1"]{
+[data-animation="show1"]{
     opacity: 0;
     transform: scale(0);
     transition: .6s ease-in .2s;
@@ -499,7 +502,7 @@ footer {
     --transform: scale(1);
                 
 }
-[data-animation="fade2"]{
+[data-animation="show2"]{
     opacity: 0;
     transform: scale(0);
     transition: .6s ease-in .4s;
@@ -507,7 +510,7 @@ footer {
     --opacity:1;
     --transform: scale(1);
 }
-[data-animation="fade3"]{
+[data-animation="show3"]{
     opacity: 0;
     transform: scale(0);
     transition: .6s ease-in .6s;
@@ -515,11 +518,28 @@ footer {
     --opacity:1;
     --transform: scale(1);
 }
+[data-animation="fadeR"]{
+    opacity: 0;
+    transform: translate(-20%);
+    transition: .10s ease-in .8s;
+
+    --opacity:1;
+    --transform: translate(0%);
+}
+[data-animation="fadeL"]{
+    opacity: 0;
+    transform: translate(20%);
+    transition: .10s ease-in .8s;
+
+    --opacity:1;
+    --transform: translate(0%);
+}
 .unset {
     opacity: var(--opacity);
     transform: var(--transform);
 
 }
+
 
 
 @media screen and (max-width:1100px) {
@@ -529,6 +549,9 @@ footer {
     .menu_link {
         padding: 0 15px;
     }
+    div#soporte {
+        padding: 2rem 1rem;
+    }
     @media screen and (max-width:1000px) {
         .contenedor_img {
             width: 11rem;
@@ -537,12 +560,10 @@ footer {
         .img_empresa {
             width: 9rem;
         }
-        div#soporte {
-            padding: 2rem 1rem;
-        }
+
         #marcas {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr ;
             align-items: center;
             align-content: center;
@@ -578,7 +599,7 @@ footer {
                 z-index: -12;
                 width: 100%;
                 height: max-content;
-                top: 2.9em;
+                top: 2.8em;
                 right: 0;
                 padding: 1em 0 0 0;
                 overflow-y: auto;
@@ -611,23 +632,27 @@ footer {
 
             @media screen and (max-width: 795px) {
 
-                /* CHEQUEAR ESPACIO  */
-
-
-                @media screen and (max-width:380px) {
-                    .contenedor_img {
-                        width: 10rem;
-                    }
-
-                    #img_empresas {
-                        gap: 1em;
-                    }
-                    .img_empresa {
-                        width: 8rem;
-                    }
-                    #servicios {
-                        padding: 0;
-                    }
+                #footer {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5rem 0 3rem 0;
+                    gap: 2em;
+                    margin: 0;
+                    
+                }
+                #linea_v {
+                    display: none;
+                }
+                input, textarea, select {
+                    width: 300px;
+                }
+                #form_contacto {
+                    padding: 1em 2em;
+                    margin: 0 0 3em 0 ;
+                    width: fit-content;
+                }
+                @media screen and (max-width:570px) {
                     div#soporte {
                         display: flex;
                         flex-direction: column;
@@ -651,31 +676,34 @@ footer {
                         width: 7.5em;
                         margin: 0 0 0 2em;
                     }
-                    #marcas {
-                        grid-template-columns: 1fr 1fr;
-                    }
-                    input, textarea, select {
-                        width: 300px;
-                    }
-                    #form_contacto {
-                        padding: 1em 2em;
-                        margin: 0 0 3em 0 ;
-                        width: fit-content;
-                    }
-                    #footer {
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 5rem 0 3rem 0;
-                        gap: 2em;
-                        margin: 0;
+
+                    @media screen and (max-width:380px) {
+                        .contenedor_img {
+                            width: 10rem;
+                        }
+    
+                        #img_empresas {
+                            gap: 1em;
+                        }
+                        .img_empresa {
+                            width: 8rem;
+                        }
+                        #servicios {
+                            padding: 0;
+                        }
+
+                        #marcas {
+                            grid-template-columns: 1fr 1fr;
+                        }
+    
                         
-                    }
-                    #linea_v {
-                        display: none;
                     }
                     
                 }
+
+
+
+
                 
             }
             

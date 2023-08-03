@@ -32,12 +32,17 @@ menu.addEventListener("click", () => {
     })
 });
 
-const Contenedor = document.querySelectorAll(".contenedor_elementos");
+const Contenedores = document.querySelectorAll(".contenedor_elementos");
 
 function triggerAnimation(entries){
     entries.forEach(entry => {
-        const elementos = entry.target.querySelectorAll("span");
-        elementos.forEach(elemento => {
+        const elementosspan = entry.target.querySelectorAll("span");
+        const elementosimg = entry.target.querySelectorAll("img");
+        
+        elementosspan.forEach(elemento => {
+            elemento.classList.toggle('unset', entry.isIntersecting);
+        })
+        elementosimg.forEach(elemento => {
             elemento.classList.toggle('unset', entry.isIntersecting);
         })
     })
@@ -45,10 +50,10 @@ function triggerAnimation(entries){
 const options = {
     root: null,
     rootMargin: "0px",
-    threshold: .75,
+    threshold: .25,
 }
 const observer = new IntersectionObserver(triggerAnimation, options);
-Contenedor.forEach(contenedor => {
+Contenedores.forEach(contenedor => {
     observer.observe(contenedor)
 })
 
