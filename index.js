@@ -15,9 +15,13 @@ async function handleSumit(event) {
     })
     console.log(response)
     if (response.ok) {
+        const respuesta = document.getElementById("form_estado");
+        respuesta.textContent = `Gracias por contactarnos!`;
+        respuesta.classList.toggle("active");
         this.reset()
-        
     }
+
+      
 }
 const menu = document.querySelector(".menu__desplegable");
 const img = document.querySelector(".menu__img");

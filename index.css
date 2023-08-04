@@ -14,17 +14,11 @@
 
 /* ESTILO GENERAL */
 
-html {
-    font-size: 15px;
-}
 body, header, footer {
     height: 100%;
     width: 100%;
     margin: 0;
-    background-color: #f5f5f5;
 }
-
-
 
 /* HEADER */
 .menu {
@@ -117,12 +111,8 @@ li.linea {
 .carousel-caption {
     top: 30%;
     transform: translateX(-120px);
-    position: absolute;
 }
-.first-caption {
-    display: flex;
-    flex-direction: column;
-}
+
 #logo_carousel {
     width: 40%;
 }
@@ -175,7 +165,7 @@ p.sub_carousel {
 }
 .titulo_somos {
     font-family: Controller4;
-    font-size: 2.1em;
+    font-size: 2em;   
 }
 .contenido_somos {
     display: inline-flex;
@@ -243,12 +233,19 @@ span.contenedor_img {
     align-content: center;
     justify-items: center;
     align-items: center;
+    margin: 4rem 0 0 0;
     padding: 5em 2rem 0 2rem ;
     text-align: center;
     
 
     width: 100%;
     height: 100%;
+}
+.texto_descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .titulo {
     font-family: Controller4;
@@ -261,8 +258,8 @@ p.contenido_servicios {
     font-family: "Open Sans", sans-serif;
     color: rgba(40, 48, 58, 1);
     font-weight: lighter;
-    padding: 1rem;
-    text-align: center;
+    text-align: left;
+
     max-width: 35rem;
 }
 
@@ -307,7 +304,7 @@ div#soporte {
   
     gap: 1.5rem;
     padding: 2rem 9rem; 
-    margin: 2rem 0;
+    margin: 4rem 0;
 }
 
 
@@ -337,7 +334,7 @@ div#soporte {
     justify-content: center;
     justify-items: center;
     width: 100%;
-    padding: 3rem;
+    padding: 2rem;
 }
 .marca {
     padding: 0;
@@ -406,6 +403,15 @@ select {
 }
 select:hover {
     color: #630f0f;
+}
+.active {
+    background-color: rgb(30, 155, 85);
+    border-radius: 16px;
+    text-align: center;
+    width: 230px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    padding: 0.2em 0;
 }
 button#boton_form {
     border: none;
@@ -561,15 +567,6 @@ footer {
             width: 9rem;
         }
 
-        #marcas {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr ;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            padding: 1em 0;
-        }
     
         @media screen and (max-width:841px) {
             li.linea {
@@ -627,6 +624,10 @@ footer {
             div#soporte {
                 padding: 1rem 0;
             }
+            #marcas {
+                padding: 2rem;
+            }
+
 
 
 
@@ -636,23 +637,25 @@ footer {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    padding: 5rem 0 3rem 0;
-                    gap: 2em;
-                    margin: 0;
-                    
+                    padding: 2rem 0 0 0 ;
+                    bottom: 0;
+                    max-height: 360px;
+                }
+                #logo_footer {
+                    padding-bottom: 1.5rem;
                 }
                 #linea_v {
                     display: none;
                 }
                 input, textarea, select {
-                    width: 300px;
+                    width: 400px;
                 }
                 #form_contacto {
                     padding: 1em 2em;
                     margin: 0 0 3em 0 ;
                     width: fit-content;
                 }
-                @media screen and (max-width:570px) {
+                @media screen and (max-width:580px) {
                     div#soporte {
                         display: flex;
                         flex-direction: column;
@@ -676,6 +679,20 @@ footer {
                         width: 7.5em;
                         margin: 0 0 0 2em;
                     }
+                    input, textarea, select {
+                        width: 300px;
+                    }
+
+                    .titulo_somos {
+                        font-size: 1.5em;   
+                    }
+                    #empresas p.titulo {
+                        font-size: 1em;
+                    }
+                    .titulo {
+                        font-size: 1.5em;
+                    }
+
 
                     @media screen and (max-width:380px) {
                         .contenedor_img {
@@ -693,8 +710,21 @@ footer {
                         }
 
                         #marcas {
-                            grid-template-columns: 1fr 1fr;
+                            
+                            padding: 0;
                         }
+                        p.contenido_servicios {
+                            max-width: 20em;
+                        }
+                        p.contenido_soporte{
+                            max-width: 20em;
+                        }
+                        .texto_somos {
+                            max-width: 30rem;
+                            padding: 2rem;
+                        }
+
+
     
                         
                     }
