@@ -95,7 +95,15 @@ li.linea {
     transform: rotate(180deg);
 }
 
-
+/* PRESENTACION MOVIL */
+.movil {
+    display: none;
+    background-image: url("img/movil.png");
+    background-size: 25rem;
+    height: 12rem;
+    width: 100%;
+    top: 150px;
+}
 
  /* CARRUSEL*/
 #carousel{
@@ -786,6 +794,24 @@ footer {
 
 
                     @media screen and (max-width:380px) {
+                        .menu-container {
+                            max-height: 1em;
+                        }
+                        #menu-siswork {
+                            display: none;
+                        }
+                        .menu-links {
+                            top: 0.4em;
+                        }
+                        #carousel {
+                            display: none;
+                        }
+                        .movil {
+                            display: flex;
+                        }
+                        .somos {
+                            margin: 0;
+                        }
                         span.contenedor-img {
                             width: 10rem;
                         }
