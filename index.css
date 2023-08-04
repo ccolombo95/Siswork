@@ -180,7 +180,7 @@ p.sub-carousel {
     width: 100%;
 }
 .texto-somos {
-    max-width: 27rem;
+    max-width: 35rem;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -262,7 +262,7 @@ p.contenido-servicios {
     font-weight: lighter;
     text-align: left;
 
-    max-width: 27rem;
+    max-width: 35rem;
 }
 
 p.contenido-soporte {
@@ -332,6 +332,7 @@ div#soporte {
     justify-items: center;
     width: 100%;
     padding: 2rem;
+    margin: 2rem 0 0 0;
 }
 .marca {
     padding: 0;
@@ -579,12 +580,12 @@ footer {
             font-size: .9em;  
         }
         .texto-somos {
-            max-width: auto;
-            margin: 2rem 0 3rem 0;
+            max-width: 27rem;
+            margin: 0rem 0 3rem 0;
 
         }
-        .contenido-servicios {
-            max-width: auto;
+        p.contenido-servicios {
+            max-width: 27rem;
             margin: 2rem 0 0 0;
         }
         .texto-descripcion{
@@ -593,6 +594,12 @@ footer {
         #footer {
             padding: 3rem 0;
             bottom: 0;
+        }
+        p.contenido-servicios {
+            max-width: 34rem;
+        }
+        .texto-descripcion {
+            margin: 0 3rem;
         }
 
 
@@ -712,6 +719,7 @@ footer {
                     margin: 0 0 3em 0 ;
                     width: fit-content;
                 }
+
                 @media screen and (max-width:580px) {
                     div#soporte {
                         display: flex;
@@ -728,6 +736,7 @@ footer {
                         font-size: 1.1em;
                         color: rgba(73, 136, 211, 1);
                     }
+
                     .texto-soporte {
                         width: 20em;
                         text-align: center;
@@ -737,11 +746,20 @@ footer {
                         margin: 0 0 0 2em;
                     }
                     input, textarea, select {
-                        width: 300px;
+                        width: 280px;
                     }
-
+                    .somos{
+                        gap: 0;
+                    }
                     .titulo-somos {
                         font-size: 1.5em;   
+                    }
+                    #img-somos {
+                        display: none;
+                    }
+                    
+                    #img-ventas,#img-soporte {
+                        width: 13rem;
                     }
                     #empresas p.titulo {
                         font-size: 1em;
