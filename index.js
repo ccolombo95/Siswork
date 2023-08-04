@@ -1,4 +1,4 @@
-const $form = document.getElementById("form_contacto");
+const $form = document.getElementById("form-contacto");
     
 $form.addEventListener("submit",  handleSumit);
 
@@ -15,28 +15,28 @@ async function handleSumit(event) {
     })
     console.log(response)
     if (response.ok) {
-        const respuesta = document.getElementById("form_estado");
+        const respuesta = document.getElementById("form-estado");
         respuesta.textContent = `Gracias por contactarnos!`;
-        respuesta.classList.toggle("active");
+        respuesta.classList.toggle("enviado");
         this.reset()
     }
 
       
 }
-const menu = document.querySelector(".menu__desplegable");
-const img = document.querySelector(".menu__img");
-const list = document.querySelector(".menu__links");
+const menu = document.querySelector(".menu-desplegable");
+const img = document.querySelector(".menu-img");
+const list = document.querySelector(".menu-links");
 
 
 menu.addEventListener("click", () => {
-    list.classList.toggle("menu__links--show");
-    img.classList.toggle("menu__img--show");
+    list.classList.toggle("menu-links--show");
+    img.classList.toggle("menu-img--show");
     img.addEventListener("click", () => {
-        img.classList.toggle("menu__img");
+        img.classList.toggle("menu-img");
     })
 });
 
-const Contenedores = document.querySelectorAll(".contenedor_elementos");
+const Contenedores = document.querySelectorAll(".contenedor-elementos");
 
 function triggerAnimation(entries){
     entries.forEach(entry => {

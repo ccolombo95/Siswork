@@ -34,7 +34,7 @@ body, header, footer {
     font-family: Controller4;
 }
 
-.menu__container {
+.menu-container {
     display: flex;
     flex-direction: row;
     padding: 0 15rem;
@@ -45,7 +45,7 @@ body, header, footer {
     width: 100%;
 }
 
-.menu__links {
+.menu-links {
     width: 100%;
     height: 100%;
     display: flex;
@@ -56,12 +56,12 @@ body, header, footer {
     margin: 0;   
 }
 
-.menu__item {
+.menu-item {
     position: relative;
     height: 100%;
 }
 
-.menu__link {
+.menu-link {
     display: flex;
     align-items: center;
 
@@ -70,14 +70,14 @@ body, header, footer {
     height: 100%;
     padding: 0 20px;
 }
-.menu__link:hover {
+.menu-link:hover {
     color:rgb(107, 108, 109);
 }
-.menu__desplegable {
+.menu-desplegable {
     display: none;
     cursor: pointer;
 }
-#menu_siswork{
+#menu-siswork{
     font-family: Controller4;
     font-size: 2em;
     align-self: center;
@@ -91,14 +91,14 @@ li.linea {
     display: none;
 }
 
-.menu__img--show {
+.menu-img--show {
     transform: rotate(180deg);
 }
 
 
 
  /* CARRUSEL*/
-#carrusel{
+#carousel{
     z-index: 0;
     background-color: rgba(73, 136, 211, 1);
 }
@@ -108,26 +108,30 @@ li.linea {
 .carousel-fade {
     transition: .6s;
 }
-.carousel-caption {
+.carousel-caption.txt {
     top: 30%;
-    transform: translateX(-120px);
+    transform: translateX(-15rem);
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    transform: translate(1rem, -22rem);
 }
 
-#logo_carousel {
-    width: 40%;
+#logo-carousel {
+    width: 50%;
 }
-p.titulo__carousel {
+p.titulo-carousel {
     font-family: Controller5;
     font-size: 2.5em;
     
 }
-p.sub_carousel {
+p.sub-carousel {
     font-family: Controller3;
-    font-size: 1.2em;
-    
+    font-size: 1.2em;  
 }
 
-.boton_carousel {
+.boton-carousel {
     border-style: none;
     background-color: rgba(73, 136, 211, 1);
     color: white;
@@ -138,7 +142,7 @@ p.sub_carousel {
     font-family: Controller4;
     font-size: 0.9em;
 }
-.boton_carousel a#link_contacto {
+.boton-carousel a#link-contacto {
     text-decoration: none;
     color: white;
 
@@ -163,22 +167,20 @@ p.sub_carousel {
     gap: 2rem;
     color: white;
 }
-.titulo_somos {
+.titulo-somos {
     font-family: Controller4;
     font-size: 2em;   
 }
-.contenido_somos {
+.contenido {
     display: inline-flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1rem;
     width: 100%;
 }
-.texto_somos {
-    max-width: 35rem;
-    padding: 0 3rem 0 0 ;
+.texto-somos {
+    max-width: 27rem;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -199,7 +201,7 @@ div#empresas {
     width: 100%;
     height: 100%;
 }
-.contenedor_elementos {
+.contenedor-elementos {
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
@@ -207,7 +209,7 @@ div#empresas {
     gap: 1em;
 }
 
-span.contenedor_img {
+span.contenedor-img {
     background-color: rgba(240, 240, 240, 1);
     width: 13rem;
     height: 9rem;
@@ -216,10 +218,10 @@ span.contenedor_img {
     flex-direction: column;
     align-items: center;
 }
-.img_empresa {
+.img-empresa {
     width: 11rem;
 }
-.E_titulo {
+.E-titulo {
     font-family: Controller3;
     color: rgba(73, 136, 211, 1);
     font-size: 1em;
@@ -234,14 +236,14 @@ span.contenedor_img {
     justify-items: center;
     align-items: center;
     margin: 4rem 0 0 0;
-    padding: 5em 2rem 0 2rem ;
+    padding: 5em 1rem 0 1rem ;
     text-align: center;
     
 
     width: 100%;
     height: 100%;
 }
-.texto_descripcion {
+.texto-descripcion {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,47 +256,45 @@ span.contenedor_img {
     padding: 1rem;
 }
 
-p.contenido_servicios {
+p.contenido-servicios {
     font-family: "Open Sans", sans-serif;
     color: rgba(40, 48, 58, 1);
     font-weight: lighter;
     text-align: left;
 
-    max-width: 35rem;
+    max-width: 27rem;
 }
 
-p.contenido_soporte {
+p.contenido-soporte {
     font-family: "Open Sans", sans-serif;
     color: rgba(40, 48, 58, 1);
 }
 
-div.tipo_servicio{
+div.tipo-servicio{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-div.tipo_servicio.proveedor {
+div.tipo-servicio.proveedor {
     flex-direction: row-reverse;
 }
 
-.contenido_servicios {
-    max-width: 40rem;
-}
 
-.sub_servicios {
+.sub-servicios {
     font-family: Controller3;
     font-size: 1.6em;
     color: rgba(73, 136, 211, 1);
 }
 
 
-#img_soporte {
-    width: 22em;
+#img-soporte {
+    width: 16.5em;
 }
-#img_ventas {
-    width: 17.5em;
+#img-ventas {
+    width: 16.5em;
 }
+
 /* SOPORTE TECNICO */
 div#soporte {
     display: flex;
@@ -306,22 +306,19 @@ div#soporte {
     padding: 2rem 9rem; 
     margin: 4rem 0;
 }
-
-
-
-.sub_soporte {
+.sub-soporte {
     font-family: Controller4;
     font-size: 1.3em;
     color: rgba(73, 136, 211, 1);
 }
-.texto_soporte {
+.texto-soporte {
     display: flex;
     flex-direction: column;
     width: 16em;
     text-align: center;
     padding: .5em;
 }
-.img_tipo_soporte {
+.img-tipo-soporte {
     width: 8em;
 }
 
@@ -355,7 +352,7 @@ div#soporte {
     padding: 2em 0 0 0;
 }
 
-#form_contacto {
+#form-contacto {
     width: 39em;
     padding: 1.5em 4em 2em 4em;
 
@@ -366,7 +363,7 @@ div#soporte {
     border-radius: 30px;
     border: 2px solid  rgba(73, 136, 211, 1) ;
 }
-#datos_form {
+#datos-form {
     display: flex;
     flex-direction: column;
 
@@ -376,7 +373,6 @@ label {
     color: rgba(73, 136, 211, 1) ;
     padding-top: 1em;
 }
-
 input {
     background-color: rgba(217, 217, 217, 1);
     border: none;
@@ -393,7 +389,6 @@ textarea {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
 }
-
 select {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
@@ -404,7 +399,7 @@ select {
 select:hover {
     color: #630f0f;
 }
-.active {
+.enviado {
     background-color: rgb(30, 155, 85);
     border-radius: 16px;
     text-align: center;
@@ -413,7 +408,7 @@ select:hover {
     font-family: "Open Sans", sans-serif;
     padding: 0.2em 0;
 }
-button#boton_form {
+button#boton-form {
     border: none;
     background-color: rgba(73, 136, 211, 1);
     width: 9em;
@@ -423,9 +418,7 @@ button#boton_form {
     color: white;
     border-radius: 20px;
 }
-
-
-.boton_flotante {
+.boton-flotante {
     position: fixed;
     z-index: 10000;   
 }
@@ -438,7 +431,6 @@ button#boton_form {
     right:20px;
     background-color: white;
     border-radius: 100%;
-
 }
 img#wp {
     width: 4rem;
@@ -471,17 +463,17 @@ footer {
     margin: 0;
     padding: 2rem 0 1rem 0;
 }
-#linea_v {
+#linea-v {
     border-left: 2px solid white;
     height: 70%;
     left: 50%;
     position: absolute;
 }
 
-#logo_footer {
+#logo-footer {
     width: 19em;
 }
-#datos_footer {
+#datos-footer {
     display: flex;
     flex-direction: column;
     align-content: center ;
@@ -489,8 +481,7 @@ footer {
 
     gap: 0.3em;
 }
-
-.dato_footer {
+.dato-footer {
     display: inline-flex;
     justify-content: left;
     align-items: flex-start;
@@ -505,8 +496,7 @@ footer {
     transition: .6s ease-in .2s;
 
     --opacity:1;
-    --transform: scale(1);
-                
+    --transform: scale(1);              
 }
 [data-animation="show2"]{
     opacity: 0;
@@ -547,37 +537,76 @@ footer {
 }
 
 
-
+/* BREAKPOINTS */
 @media screen and (max-width:1100px) {
-    .menu__container {
+    .menu-container {
         padding: 0 7rem;
     }
-    .menu_link {
+    .menu-link {
         padding: 0 15px;
     }
     div#soporte {
         padding: 2rem 1rem;
     }
+    .carousel-caption.txt {
+        top: 30%;
+        transform: translate(-9rem, 2rem);
+    }
+    .first {
+        transform: translate(1rem, -14rem);
+    }
+    
     @media screen and (max-width:1000px) {
-        .contenedor_img {
+        .contenedor-img {
             width: 11rem;
             height: 12rem;
         }
-        .img_empresa {
+        .img-empresa {
             width: 9rem;
         }
+        .carousel-caption.txt {
+            top: 30%;
+            transform: translate(-9rem, 2rem);
+        }
+        .first {
+            transform: translate(1rem, -11rem);
+        }
+        p.titulo-carousel {
+            font-size: 2em;
+            
+        }
+        p.sub-carousel {
+            font-size: .9em;  
+        }
+        .texto-somos {
+            max-width: auto;
+            margin: 2rem 0 3rem 0;
+
+        }
+        .contenido-servicios {
+            max-width: auto;
+            margin: 2rem 0 0 0;
+        }
+        .texto-descripcion{
+            margin: 2rem 0 0 0;
+        }
+        #footer {
+            padding: 3rem 0;
+            bottom: 0;
+        }
+
 
     
         @media screen and (max-width:841px) {
             li.linea {
                 display: flex;
             }
-            .menu__container{
+            .menu-container{
                 flex-direction: column;
                 justify-content: center;
                 height: 2rem;
             }
-            .menu__desplegable{
+            .menu-desplegable{
                 display:flex;
                 padding-bottom: .5em;
             }
@@ -585,7 +614,7 @@ footer {
             .menu {
                 width: 100%;
             }
-            .menu__links {
+            .menu-links {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -604,53 +633,81 @@ footer {
                 
                 background-color:rgb(40, 48, 58);
             }
-            .menu__links--show {
+            .menu-links--show {
                 transform: unset;
                 width: 100%;
                 transition: transform .5s;
             }
-            .menu__link {
+            .menu-link {
                 height: auto;
                 padding: 1em 0 1.2rem 0;
             }
-            #menu_siswork{
+            #menu-siswork{
                 align-self: center;
                 height: 1em;
             }
-            #img_empresas {
-                padding: 0 4rem;
+            #img-empresas {
+                padding: 0 1rem;
             }
 
             div#soporte {
                 padding: 1rem 0;
             }
+
             #marcas {
-                padding: 2rem;
+                padding: 1rem;
+            }
+            .carousel-caption.txt {
+                top: 30%;
+                transform: translate(-9rem, 2rem);
+            }
+            .first {
+                transform: translate(1rem, -8rem);
+            }
+            #footer {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 0 0 0 ;
+                bottom: 0;
+                max-height: 360px;
+            }
+            #logo-footer {
+                padding-bottom: 1.5rem;
+            }
+            #linea-v {
+                display: none;
+            }
+            .contenido {
+                max-width: 41rem;
+            }
+            .contenido-servicios {
+                max-width: 22rem;
             }
 
 
+            @media screen and (max-width: 800px) {
 
 
-            @media screen and (max-width: 795px) {
-
-                #footer {
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 2rem 0 0 0 ;
-                    bottom: 0;
-                    max-height: 360px;
+                .first {
+                    transform: translate(0rem, -8rem);
                 }
-                #logo_footer {
-                    padding-bottom: 1.5rem;
+                .carousel-caption.txt {
+                    top: 35%;
+                    transform: translateX(-7rem);
                 }
-                #linea_v {
-                    display: none;
+
+                p.titulo-carousel {
+                    font-size: 2em;
+                    
+                }
+                p.sub-carousel {
+                    font-size: .9em;  
                 }
                 input, textarea, select {
                     width: 400px;
                 }
-                #form_contacto {
+                #form-contacto {
                     padding: 1em 2em;
                     margin: 0 0 3em 0 ;
                     width: fit-content;
@@ -661,21 +718,21 @@ footer {
                         flex-direction: column;
                         gap: 1em;
                     }
-                    .tipo_soporte {
+                    .tipo-soporte {
                         display: flex;
                         flex-direction: row;
                         width: 360px;
                     }
-                    .sub_soporte {
+                    .sub-soporte {
                         font-family: Controller4;
                         font-size: 1.1em;
                         color: rgba(73, 136, 211, 1);
                     }
-                    .texto_soporte {
+                    .texto-soporte {
                         width: 20em;
                         text-align: center;
                     }
-                    .img_tipo_soporte {
+                    .img-tipo-soporte {
                         width: 7.5em;
                         margin: 0 0 0 2em;
                     }
@@ -683,7 +740,7 @@ footer {
                         width: 300px;
                     }
 
-                    .titulo_somos {
+                    .titulo-somos {
                         font-size: 1.5em;   
                     }
                     #empresas p.titulo {
@@ -695,14 +752,14 @@ footer {
 
 
                     @media screen and (max-width:380px) {
-                        .contenedor_img {
+                        .contenedor-img {
                             width: 10rem;
                         }
     
-                        #img_empresas {
+                        #img-empresas {
                             gap: 1em;
                         }
-                        .img_empresa {
+                        .img-empresa {
                             width: 8rem;
                         }
                         #servicios {
@@ -713,13 +770,13 @@ footer {
                             
                             padding: 0;
                         }
-                        p.contenido_servicios {
+                        p.contenido-servicios {
                             max-width: 20em;
                         }
-                        p.contenido_soporte{
+                        p.contenido-soporte{
                             max-width: 20em;
                         }
-                        .texto_somos {
+                        .texto-somos {
                             max-width: 30rem;
                             padding: 2rem;
                         }
