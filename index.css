@@ -830,6 +830,10 @@ footer {
 
 
                     @media screen and (max-width:380px) {
+                        .titulo-somos {
+                            height: 0rem;
+                            font-size: 1.2em;
+                        }
 
                         .menu-container {
                             max-height: 1em;
