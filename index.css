@@ -317,6 +317,7 @@ div#soporte {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    align-items: flex-start;
   
     gap: 1.5rem;
     padding: 2rem 9rem; 
@@ -531,7 +532,7 @@ footer {
 [data-animation="fadeR"]{
     opacity: 0;
     transform: translate(-20%);
-    transition: .10s ease-in .8s;
+    transition: .8s ease-in .10s;
 
     --opacity:1;
     --transform: translate(0%);
@@ -539,7 +540,7 @@ footer {
 [data-animation="fadeL"]{
     opacity: 0;
     transform: translate(20%);
-    transition: .10s ease-in .8s;
+    transition: .8s ease-in .10s;
 
     --opacity:1;
     --transform: translate(0%);
