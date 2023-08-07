@@ -95,15 +95,6 @@ li.linea {
     transform: rotate(180deg);
 }
 
-/* PRESENTACION MOVIL */
-.movil {
-    display: none;
-    background-image: url("img/movil.png");
-    background-size: 25rem;
-    height: 12rem;
-    width: 100%;
-    top: 150px;
-}
 
  /* CARRUSEL*/
 #carousel{
@@ -113,6 +104,15 @@ li.linea {
 .carousel-inner {
     max-height: 650px;
 }
+.carousel.bg {
+    display: flex;
+}
+.carousel.lt {
+    display: none;
+}
+
+
+
 .carousel-fade {
     transition: .6s;
 }
@@ -120,6 +120,7 @@ li.linea {
     transform: translate(0,-22rem);
 }
 .carousel-caption {
+
     transform: translate(0rem, -20rem);
 }
 .first {
@@ -192,7 +193,7 @@ p.sub-carousel {
     width: 100%;
 }
 .texto-somos {
-    max-width: 35rem;
+    max-width: 31rem;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -218,7 +219,9 @@ div#empresas {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+}
+.contenedor-elementos.empresa {
+    gap: .5em;
 }
 
 span.contenedor-img {
@@ -260,7 +263,7 @@ span.contenedor-img {
     justify-content: center;
     align-items: center;
     
-    max-width: 35rem;
+    max-width: 32rem;
 }
 .titulo {
     font-family: Controller4;
@@ -299,12 +302,14 @@ div.tipo-servicio.proveedor {
 }
 
 
-#img-soporte {
+#img-soporte, #img-ventas {
     width: 16.5em;
 }
-#img-ventas {
-    width: 16.5em;
+#img-somos {
+    width: 13em;
+    margin-left: 2rem;
 }
+
 
 /* SOPORTE TECNICO */
 div#soporte {
@@ -342,11 +347,8 @@ div#soporte {
     justify-content: center;
     justify-items: center;
     width: 100%;
-
+    gap: .5em;
     margin: 2rem 2rem;
-}
-.marca {
-    padding: 0;
 }
 .marca img {
     width: 10rem;
@@ -557,8 +559,11 @@ footer {
     .menu-link {
         padding: 0 15px;
     }
+    #empresas p.titulo {
+        font-size: 1.5em;
+    }
     div#soporte {
-        padding: 2rem 0rem;
+        padding: 2rem 3rem;
         gap: 0;
     }
     .carousel-caption {
@@ -570,6 +575,15 @@ footer {
     .first {
         transform: translate(0,-13rem);
 
+    }
+    .texto-somos {
+        width: auto;
+        height: auto;
+
+    }
+    p.texto-descripcion {
+        width: auto;
+        height: auto;
     }
     
     @media screen and (max-width:1000px) {
@@ -591,15 +605,7 @@ footer {
         p.sub-carousel {
             font-size: .9em;  
         }
-        .texto-somos {
-            max-width: 27rem;
-            margin: 0rem 2rem 3rem 0;
 
-        }
-        p.texto-descripcion {
-            max-width: 27rem;
-            margin: 2rem 0 0 0;
-        }
         #footer {
             padding: 3rem 0;
             bottom: 0;
@@ -607,11 +613,26 @@ footer {
         #img-ventas,#img-soporte {
             width: 15rem;
         }
+        #img-somos {
+            width: 10rem;
+        }
 
         
 
     
         @media screen and (max-width:900px) {
+            .contenido {
+                padding: 2em;
+            }
+            .texto-somos {
+                max-width: 25rem;
+            }
+            .texto-descripcion.s {
+                max-width: 29rem;
+            }
+            .texto-descripcion.d {
+                max-width: 29rem;
+            }
             li.linea {
                 display: flex;
             }
@@ -669,7 +690,8 @@ footer {
             }
 
             #marcas {
-                padding: 0rem;
+                margin: 2rem 0rem;
+                padding: 0 1rem;
             }
             .carousel-caption.txt {
                 transform: translate(0,-13rem);
@@ -694,15 +716,28 @@ footer {
             #linea-v {
                 display: none;
             }
-            .contenido {
-                max-width: 41rem;
+            .img-tipo-soporte {
+                width: 7.5em;
+                margin: 0 0 0 2em;
             }
-            .texto-descripcion {
-                max-width: 30rem;
+            .tipo-soporte div {
+                width: 13rem;
             }
+            .tipo-soporte {
+                margin: .5em;
+            }
+
+
+
 
 
             @media screen and (max-width: 800px) {
+                .texto-descripcion.s {
+                    max-width: 25rem;
+                }
+                .texto-descripcion.d {
+                    max-width: 25rem;
+                }
 
                 p.titulo-carousel {
                     font-size: 2em;
@@ -711,6 +746,7 @@ footer {
                 p.sub-carousel {
                     font-size: .9em;  
                 }
+
                 input, textarea, select {
                     width: 400px;
                 }
@@ -726,14 +762,17 @@ footer {
                     font-size: 0.7em;
                 }
                 .carousel-caption.txt {
-                    transform: translate(0,-11rem);
+                    transform: translate(0,-9rem);
                 }
                 .first {
-                    transform: translate(0,-8rem);
+                    transform: translate(0,-6rem);
                 }
 
                 @media screen and (max-width:580px) {
 
+                    .texto-somos, .contenido-servicios {
+                        padding: 1rem;
+                    }
                     div#soporte {
                         display: flex;
                         flex-direction: column;
@@ -781,19 +820,17 @@ footer {
                     .titulo {
                         font-size: 1.5em;
                     }
-                    p.contenido-servicios {
-                        max-width: 25em;
+                    .carousel-caption.txt {
+                        transform: translate(0,0rem);
                     }
-                    p.contenido-soporte{
-                        max-width: 25em;
+                    .first {
+                        transform: translate(0,0rem);
                     }
-                    .texto-somos {
-                        max-width: 30rem;
-                        padding-left: 2rem;
-                    }
+
 
 
                     @media screen and (max-width:380px) {
+
                         .menu-container {
                             max-height: 1em;
                         }
@@ -803,12 +840,13 @@ footer {
                         .menu-links {
                             top: 0.4em;
                         }
-                        #carousel {
+                        .carousel.bg {
                             display: none;
                         }
-                        .movil {
+                        .carousel.lt {
                             display: flex;
                         }
+
                         .somos {
                             margin: 0;
                         }
@@ -817,7 +855,7 @@ footer {
                         }
     
                         #img-empresas {
-                            gap: 1em;
+                            gap: .5em;
                         }
                         .img-empresa {
                             width: 8rem;
@@ -826,32 +864,14 @@ footer {
                             padding: 0;
                         }
 
-                        #marcas { 
-                            padding: 0;
-                        }
-                        p.contenido-servicios {
-                            max-width: 20em;
-                        }
-                        p.contenido-soporte{
-                            max-width: 20em;
-                        }
-                        .texto-somos {
-                            max-width: 30rem;
+                        .marca img {
+                            width: 8rem;
                         }
 
-
-    
-                        
-                    }
-                    
+   
+                    }   
                 }
-
-
-
-
-                
-            }
-            
+            }            
         }
     }
 }
