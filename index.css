@@ -781,7 +781,7 @@ footer {
                     .tipo-soporte {
                         display: flex;
                         flex-direction: row;
-                        width: 360px;
+                        
                     }
                     .sub-soporte {
                         font-family: Controller4;
@@ -795,7 +795,7 @@ footer {
                     }
                     .img-tipo-soporte {
                         width: 7.5em;
-                        margin: 0 0 0 0.5em;
+                        margin: 0 0 0 0;
                     }
                     input, textarea, select {
                         width: 280px;
@@ -845,6 +845,7 @@ footer {
                         }
                         .carousel.lt {
                             display: flex;
+                            top: 1.5em;
                         }
 
                         .somos {
