@@ -171,12 +171,11 @@ p.sub-carousel {
 .somos {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-
     justify-content: center;
     align-items: center;
-
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2rem;
     gap: 2rem;
     color: white;
 }
@@ -374,7 +373,6 @@ div#soporte {
     width: 100%;
     margin: 2em 0;
     gap: 2em;
-    padding: 2em 0 0 0;
 }
 
 #form-contacto {
