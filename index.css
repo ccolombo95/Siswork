@@ -194,8 +194,8 @@ p.sub-carousel {
     gap: 2rem;
 }
 .texto-somos {
-    max-width: 34rem;
     font-family: 'Open Sans', sans-serif;
+    max-width: 32rem;
 }
 
 
@@ -234,6 +234,12 @@ span.contenedor-img {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+}
+span.contenedor-img:hover {
+    background-color: rgb(196, 196, 196);
+    transition: 0s;
+
 }
 .img-empresa {
     width: 11rem;
@@ -290,6 +296,7 @@ div.tipo-servicio{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 2rem ;
     gap: 3rem;
 }
 div.tipo-servicio.soporte {
@@ -322,7 +329,8 @@ div#soporte {
     align-content: center;
     justify-content: center;
     align-items: flex-start;
-    margin: 4rem 0;
+    padding: 0 8rem;
+    margin-top: 4rem;
 }
 .sub-soporte {
     font-family: Controller4;
@@ -351,6 +359,7 @@ div#soporte {
     width: 100%;
     gap: .5em;
     margin: 2rem 0rem;
+    padding: 0 3rem;
 }
 .marca img {
     width: 10rem;
@@ -583,15 +592,17 @@ footer {
         gap: 1rem;
     }
     .texto-somos {
+ 
         width: auto;
         height: auto;
-        padding: 1rem 2rem;
+        padding: 1rem 4rem;
 
     }
-    p.texto-descripcion {
+    .texto-descripcion {
+
         width: auto;
         height: auto;
-        padding: 1rem 2rem;
+        padding: 1rem 4rem;
     }
     
     @media screen and (max-width:1000px) {
@@ -687,6 +698,9 @@ footer {
                 flex-direction: column;
                 gap: 1rem;
             }
+            .texto-descripcion, .texto-somos {
+                max-width: fit-content;
+            }
             .img-tipo-soporte {
                 width: 7.5em;
                 margin: 0 0 0 2em;
@@ -762,7 +776,7 @@ footer {
                 }
                 .titulo-somos {
                     height: 0rem;
-                    font-size: 1.2em;
+                    font-size: 1.5em;
                 }
 
                 input, textarea, select {
@@ -804,16 +818,13 @@ footer {
                     .somos{
                         gap: 0;
                     }
-                    .titulo-somos {
-                        font-size: 1.5em;   
-                    }
 
                     #img-somos {
                         display: none;
                     }
                     
                     #img-ventas,#img-soporte {
-                        width: 13rem;
+                        width: 15rem;
                     }
                     #empresas p.titulo {
                         font-size: 1em;
@@ -821,9 +832,21 @@ footer {
                     .titulo {
                         font-size: 1.5em;
                     }
+                    .texto-descripcion {
+                        padding: 0rem;
+                    }
+                    .texto-somos {
+                        padding: 0rem;
+                    }
                     @media screen and (max-width:380px) {
                         .somos {
                             margin: 0;
+                        }
+                        .titulo-somos,.titulo {
+                            font-size: 1.4em;   
+                        }
+                        .sub-servicios{
+                            font-size: 1.3em;
                         }
                         span.contenedor-img {
                             width: 10rem;
