@@ -233,7 +233,6 @@ span.contenedor-img {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    cursor: pointer;
 }
 span.contenedor-img:hover {
     background-color: rgb(196, 196, 196);
