@@ -136,6 +136,7 @@ li.linea {
 p.titulo-carousel {
     font-family: Controller5;
     font-size: 2.5em;
+
     
 }
 p.sub-carousel {
@@ -195,6 +196,7 @@ p.sub-carousel {
 .texto-somos {
     font-family: 'Open Sans', sans-serif;
     max-width: 32rem;
+    text-indent: 10px;
 }
 
 
@@ -315,7 +317,7 @@ div.tipo-servicio.proveedor {
     width: 19em;
 }
 #img-somos {
-    width: 15em;
+    width: 14em;
 }
 
 
@@ -632,7 +634,7 @@ footer {
             width: 17rem;
         }
         #img-somos {
-            width: 15rem;
+            width: 14rem;
         }    
         .caption{
             transform: translate(0rem, -10rem);
