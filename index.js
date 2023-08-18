@@ -53,7 +53,7 @@ function triggerAnimation(entries){
 };
 const options = {
     root: null,
-    rootMargin: "20px",
+    rootMargin: "50px",
     threshold: .10,
 }
 const observer = new IntersectionObserver(triggerAnimation, options);
