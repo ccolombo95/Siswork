@@ -833,6 +833,9 @@ footer {
                             align-items: center;
                             max-height: 70%;
                         }
+                        .carousel-caption.lt {
+                            padding-top: 1rem;
+                        }
                         .carousel-control-prev, .carousel-control-next, .carousel-indicators{
                             visibility: hidden;
                         }
