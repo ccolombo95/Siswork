@@ -819,7 +819,6 @@ footer {
 
                         p.titulo-carousel {
                             font-size: 1.3em;
-                            width: 350px;
                             
                         }
                         p.sub-carousel {
@@ -834,6 +833,7 @@ footer {
                             justify-content: center;
                             align-items: center;
                             max-height: 70%;
+                            width: 350px;
                         }
                         .carousel-caption.lt {
                             margin-top: 1.3rem;
@@ -842,6 +842,7 @@ footer {
                         .carousel-control-prev, .carousel-control-next, .carousel-indicators{
                             visibility: hidden;
                         }
+                        .boton_cas
 
                         .somos {
                             margin: 0;
