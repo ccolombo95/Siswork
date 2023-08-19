@@ -833,10 +833,6 @@ footer {
                             align-items: center;
                             max-height: 70%;
                         }
-                        .carousel-caption.lt {
-                            margin-bottom: .5rem;
-                        }
-                        
                         .carousel-control-prev, .carousel-control-next, .carousel-indicators{
                             visibility: hidden;
                         }
