@@ -116,6 +116,7 @@ li.linea {
 
     justify-content: center;
     align-items: flex-start;
+    align-content: flex-start;
 }
 
 
@@ -815,10 +816,12 @@ footer {
                     @media screen and (max-width:550px) {
                         #logo-carousel {
                             width: 70%;
+                            padding-bottom: 0.5em;
                         }
-
                         p.titulo-carousel {
                             font-size: 1.3em;
+                            max-width: 330px;
+                            height: 1em;
                             
                         }
                         p.sub-carousel {
@@ -829,20 +832,28 @@ footer {
                             width: 6rem;
                             font-size: 0.5em;
                         }
+                        .carousel-item {
+                            display: flex;
+                            justify-items: flex-start;
+                            align-items: flex-start;
+                        }
                         .carousel-caption {
-                            justify-content: center;
                             align-items: center;
+                            justify-items: center;
+                            margin-top: 1rem;
                             max-height: 70%;
-                            width: 300px;
+                        
                         }
                         .carousel-caption.lt {
-                            margin-top: 1.3rem;
+                            margin-top: 1rem;
                         }
                         
-                        .carousel-control-prev, .carousel-control-next, .carousel-indicators{
+                        a.carousel-control-prev, a.carousel-control-next, .carousel-indicators{
                             visibility: hidden;
+                            width: .1em;
+                            margin: 0;
+                            padding: 0;
                         }
-                        .boton_cas
 
                         .somos {
                             margin: 0;
