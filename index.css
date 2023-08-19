@@ -834,7 +834,7 @@ footer {
                             max-height: 70%;
                         }
                         .carousel-caption.lt {
-                            margin-top: 1rem;
+                            margin-top: 3rem;
                         }
                         .carousel-control-prev, .carousel-control-next, .carousel-indicators{
                             visibility: hidden;
