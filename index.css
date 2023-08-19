@@ -832,7 +832,8 @@ footer {
                         .carousel-caption {
                             justify-content: center;
                             align-items: center;
-                            width: 360px;
+                           
+                            width: 300px;
                         }
                         .carousel-caption.lt {
                             margin-top: 1.3rem;
