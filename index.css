@@ -101,48 +101,35 @@ li.linea {
     z-index: 0;
     background-color: rgba(73, 136, 211, 1);
 }
-.carousel-inner {
-    max-height: 650px;
-}
-.carousel.bg {
-    display: flex;
-}
-.carousel.lt {
-    display: none;
-}
-
-
 
 .carousel-fade {
     transition: .6s;
 }
-.caption{
+.carousel-item {
+    max-height: 650px;
+}
+
+.carousel-caption {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: center;
     align-items: flex-start;
-    justify-content: flex-start;
-    gap: .5rem;
-    transform: translate(0rem, -25rem);
 }
-.carousel-caption.txt {
-    transform: translate(0rem, -3em);
 
-}
 
 #logo-carousel {
-    width: 40%;
+    width: 30%;
     padding-bottom: 1rem;
 }
 p.titulo-carousel {
     font-family: Controller5;
     font-size: 2.5em;
-
-    
 }
 p.sub-carousel {
     font-family: Controller3;
-    font-size: 1.2em;  
-    padding-left: .5em;
+    font-size: 1.2em; 
+    text-indent: .5em;
 }
 
 .boton-carousel {
@@ -562,11 +549,6 @@ footer {
 
 }
 
-@media screen and (max-width: 1300px) {
-    .caption{
-        transform: translate(0rem, -19rem);
-    }
-}
 /* BREAKPOINTS */
 @media screen and (max-width:1100px) {
     .menu-container {
@@ -583,14 +565,7 @@ footer {
         padding: 2rem 2rem;
         gap: 0;
     }
-    .caption{
-        transform: translate(0rem, -13rem);
-    }
-    
-    #logo-carousel {
-        width: 40%;
-        padding-bottom: 1rem;
-    }
+
 
     .contenido, .texto-descripcion {
         gap: 1rem;
@@ -636,13 +611,7 @@ footer {
         #img-somos {
             width: 14rem;
         }    
-        .caption{
-            transform: translate(0rem, -10rem);
-        }
 
-        
-
-    
         @media screen and (max-width:910px) {
             .menu-container{
                 flex-direction: column;
@@ -688,10 +657,6 @@ footer {
             #menu-siswork{
                 align-self: center;
                 height: 1em;
-            }
-
-            .caption{
-                transform: translate(0rem, -8rem);
             }
 
             .contenido {
@@ -750,9 +715,6 @@ footer {
                 display: none;
             }
             @media screen and (max-width: 800px) {
-                .caption{
-                    transform: translate(0rem, -80%);
-                }
 
                 p.titulo-carousel {
                     font-size: 2em;
@@ -789,13 +751,6 @@ footer {
                     }
                     .menu-links {
                         top: 1em;
-                    }
-                    .carousel.bg {
-                        display: none;
-                    }
-                    .carousel.lt {
-                        display: flex;
-                        top: 1.5em;
                     }
                     div#soporte {
                         display: flex;
