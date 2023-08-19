@@ -715,6 +715,9 @@ footer {
                 display: none;
             }
             @media screen and (max-width: 800px) {
+                #logo-carousel {
+                    width: 50%;
+                }
 
                 p.titulo-carousel {
                     font-size: 2em;
@@ -743,6 +746,12 @@ footer {
                     width: fit-content;
                 }
                 @media screen and (max-width:740px) {
+                    p.titulo-carousel {
+                        font-size: 1.5em;
+                    }
+                    p.sub-carousel {
+                        font-size: 0.5em; 
+                    }
                     .menu-container {
                         max-height: 1em;
                     }
@@ -802,7 +811,36 @@ footer {
                     .texto-somos {
                         padding: 0rem;
                     }
-                    @media screen and (max-width:380px) {
+                    @media screen and (max-width:550px) {
+                        #logo-carousel {
+                            width: 70%;
+                        }
+
+                        p.titulo-carousel {
+                            font-size: .9em;
+                            height: 1rem;
+                        }
+                        p.sub-carousel {
+                            font-size: 0.5em;
+                        }
+                        .boton-carousel {
+                            height: 1rem;
+                            width: 6rem;
+                            font-size: 0.5em;
+                        }
+                        .carousel-caption {
+                            justify-content: center;
+                            align-items: center;
+                            max-height: 70%;
+                        }
+                        .carousel-caption.lt {
+                            margin-bottom: 1rem;
+                        }
+                        
+                        .carousel-control-prev, .carousel-control-next, .carousel-indicators{
+                            visibility: hidden;
+                        }
+
                         .somos {
                             margin: 0;
                         }
@@ -828,6 +866,16 @@ footer {
 
                         .marca img {
                             width: 8rem;
+                        }
+                        img#wp {
+                            width: 3rem;
+                         }
+                        
+                        img#tel {
+                            width: 3rem;
+                        }
+                        #telefono {
+                            bottom: 80px;
                         }
                     }   
                 }
