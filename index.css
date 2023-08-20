@@ -740,7 +740,7 @@ footer {
                 }
                 @media screen and (max-width:740px) {
                     .texto-descripcion, .texto-somos {
-                        padding: 1rem 0rem;
+                        padding: 1rem .5rem;
                     }
                     p.titulo-carousel {
                         font-size: 1.5em;
@@ -835,6 +835,9 @@ footer {
                         }
                         .carousel-caption.lt {
                             margin-top: 1rem;
+                        }
+                        .boton-carousel {
+                            display: none;
                         }
                         
                         a.carousel-control-prev, a.carousel-control-next, .carousel-indicators{
