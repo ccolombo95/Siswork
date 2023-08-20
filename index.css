@@ -663,7 +663,7 @@ footer {
             }
             .texto-descripcion, .texto-somos {
                 max-width: fit-content;
-                padding: 1rem 4rem;
+                padding: 0rem 4rem;
             }
             .img-tipo-soporte {
                 width: 7.5em;
@@ -740,7 +740,7 @@ footer {
                 }
                 @media screen and (max-width:740px) {
                     .texto-descripcion, .texto-somos {
-                        padding: 1rem .5rem;
+                        padding: 0rem .5rem;
                     }
                     p.titulo-carousel {
                         font-size: 1.5em;
