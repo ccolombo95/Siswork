@@ -210,6 +210,7 @@ div#empresas {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    max-width: 1150px;
 }
 div.contenedor-elementos.empresa {
     gap: .5em;
