@@ -81,7 +81,7 @@ body, header, footer {
     font-family: Controller4;
     font-size: 2em;
     align-self: center;
-    height: 1.2em;
+    height: 1.5em;
 }
 li.linea {
     border-bottom: 1px solid white;
@@ -121,7 +121,7 @@ li.linea {
 
 
 #logo-carousel {
-    width: 35%;
+    width: 40%;
     padding-bottom: 1rem;
 }
 p.titulo-carousel {
@@ -272,6 +272,7 @@ p.contenido-servicios {
     color: rgba(40, 48, 58, 1);
     font-weight: lighter;
     text-align: left;
+    text-indent: 10px;
 }
 
 p.contenido-soporte {
@@ -439,21 +440,14 @@ button#boton-form {
     right:20px;
 }
 #telefono {
-    bottom: 110px;
+    bottom: 100px;
     right:20px;
-    background-color: white;
-    border-radius: 100%;
 }
-img#wp {
+img#wp, img#tel {
     width: 4rem;
     filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
- }
+}
 
-img#tel {
-    width: 4rem;
-    border-radius: 100%;
-    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
-}
 
 
 /* FOOTER */
@@ -573,17 +567,12 @@ footer {
         gap: 1rem;
     }
     .texto-somos {
- 
         width: auto;
         height: auto;
-        padding: 1rem 4rem;
-
     }
     .texto-descripcion {
-
         width: auto;
         height: auto;
-        padding: 1rem 4rem;
     }
     
     @media screen and (max-width:1000px) {
@@ -614,7 +603,7 @@ footer {
             width: 14rem;
         }    
 
-        @media screen and (max-width:910px) {
+        @media screen and (max-width:928px) {
             .menu-container{
                 flex-direction: column;
                 justify-content: center;
@@ -673,6 +662,7 @@ footer {
             }
             .texto-descripcion, .texto-somos {
                 max-width: fit-content;
+                padding: 1rem 4rem;
             }
             .img-tipo-soporte {
                 width: 7.5em;
