@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 118 118" style="enable-background:new 0 0 118 118;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#4988D3;}
+	.st0{fill:url(#SVGID_1_);}
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	.st2{fill:#4988D3;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-miterlimit:10;}
-	.st4{fill:#4988D3;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="59" x2="118" y2="59">
+	<stop  offset="0" style="stop-color:#49E1FF"/>
+	<stop  offset="0.0636" style="stop-color:#49D8FA"/>
+	<stop  offset="0.3302" style="stop-color:#49B5E9"/>
+	<stop  offset="0.5825" style="stop-color:#499CDD"/>
+	<stop  offset="0.8125" style="stop-color:#498DD6"/>
+	<stop  offset="1" style="stop-color:#4988D3"/>
+</linearGradient>
 <circle class="st0" cx="59" cy="59" r="59"/>
 <g>
-	<g>
-		<g>
-			<path class="st1" d="M59,86.2L59,86.2c-10.8,0-19.6-8.8-19.6-19.6v-26c0-10.8,8.8-19.6,19.6-19.6h0c10.8,0,19.6,8.8,19.6,19.6v26
-				C78.6,77.3,69.8,86.2,59,86.2z"/>
-			<path class="st1" d="M59.1,80.9L59.1,80.9c-7.4,0-13.5-6.1-13.5-13.5V40.2c0-7.4,6.1-13.5,13.5-13.5h0c7.4,0,13.5,6.1,13.5,13.5
-				v27.2C72.5,74.8,66.5,80.9,59.1,80.9z"/>
-		</g>
-		<path class="st2" d="M68.4,93.1H49.6c-8.6,0-15.6-7-15.6-15.6V62.3c0-3,2.4-5.4,5.4-5.4h39.2c3,0,5.4,2.4,5.4,5.4v15.2
-			C84,86.1,77,93.1,68.4,93.1z"/>
-	</g>
-	<line class="st3" x1="34" y1="63" x2="63.5" y2="63"/>
-	<line class="st3" x1="66.4" y1="63" x2="69.9" y2="63"/>
-	<line class="st3" x1="72.9" y1="63" x2="84" y2="63"/>
-	<circle class="st4" cx="58.8" cy="76.6" r="10.1"/>
-	<polyline class="st4" points="53.9,76.4 58.4,79.9 63.5,73.8 	"/>
+	<path class="st1" d="M69.39,98.68H48.61c-9.41,0-17.11-7.7-17.11-17.11V64.83c0-3.27,2.68-5.95,5.95-5.95h43.11
+		c3.27,0,5.95,2.68,5.95,5.95v16.74C86.5,90.98,78.8,98.68,69.39,98.68z"/>
+	<path class="st1" d="M37.45,58.88h6.79v-18.4c0-8.16,6.67-14.83,14.83-14.83S73.9,32.33,73.9,40.48v18.4h6.65c0,0,0,0,0.01,0v-18
+		c0-11.86-9.7-21.56-21.56-21.56h0c-11.86,0-21.56,9.7-21.56,21.56L37.45,58.88C37.44,58.88,37.44,58.88,37.45,58.88z"/>
+	<line class="st2" x1="31.5" y1="65.58" x2="63.98" y2="65.58"/>
+	<line class="st2" x1="67.19" y1="65.58" x2="70.99" y2="65.58"/>
+	<line class="st2" x1="74.33" y1="65.58" x2="86.5" y2="65.58"/>
+	<circle class="st3" cx="58.81" cy="80.53" r="11.08"/>
+	<polyline class="st3" points="53.35,80.36 58.33,84.16 63.98,77.51 	"/>
 </g>
 </svg>

@@ -1,28 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 118 118" style="enable-background:new 0 0 118 118;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#4988D3;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-miterlimit:10;}
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
 	.st3{fill:#4988D3;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
 </style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="59" x2="118" y2="59">
+	<stop  offset="0" style="stop-color:#49E1FF"/>
+	<stop  offset="0.0636" style="stop-color:#49D8FA"/>
+	<stop  offset="0.3302" style="stop-color:#49B5E9"/>
+	<stop  offset="0.5825" style="stop-color:#499CDD"/>
+	<stop  offset="0.8125" style="stop-color:#498DD6"/>
+	<stop  offset="1" style="stop-color:#4988D3"/>
+</linearGradient>
 <circle class="st0" cx="59" cy="59" r="59"/>
-<path class="st1" d="M89.4,86H28.6c-3.1,0-5.6-2.5-5.6-5.6V37.7c0-3.1,2.5-5.6,5.6-5.6h60.7c3.1,0,5.6,2.5,5.6,5.6v42.6
-	C95,83.4,92.5,86,89.4,86z"/>
-<line class="st2" x1="23" y1="49.4" x2="67" y2="49.4"/>
-<line class="st2" x1="70" y1="49.4" x2="74.7" y2="49.4"/>
-<line class="st2" x1="95" y1="49.4" x2="77.6" y2="49.4"/>
-<rect x="27.7" y="36.4" class="st2" width="62.8" height="8.6"/>
-<line class="st2" x1="34.9" y1="36.4" x2="34.9" y2="45"/>
-<path class="st2" d="M8,17.8"/>
-<path class="st2" d="M85.7,77.7H58.5c-1.6,0-3-1.3-3-3v-15c0-1.6,1.3-3,3-3h27.2c1.6,0,3,1.3,3,3v15C88.7,76.4,87.4,77.7,85.7,77.7z
-	"/>
-<path class="st3" d="M95.6,86.2l-7.9-7.9l4-3c1.5-1.1,1-3.4-0.8-3.9l-18.1-4.9c-1.6-0.4-3.1,1.1-2.7,2.7l4.9,18.1
-	c0.5,1.8,2.8,2.2,3.9,0.8l3-4l7.9,7.9c0.8,0.8,2.3,0.8,3.1,0l2.9-2.9C96.4,88.5,96.4,87.1,95.6,86.2z"/>
-<line class="st2" x1="28.7" y1="56.8" x2="48.9" y2="56.8"/>
-<line class="st2" x1="28.7" y1="63" x2="41" y2="63"/>
-<line class="st2" x1="28.7" y1="69.5" x2="46" y2="69.5"/>
-<line class="st2" x1="28.7" y1="76.3" x2="48.9" y2="76.3"/>
+<path class="st1" d="M7.95,17.82"/>
+<line class="st1" x1="34.17" y1="36.44" x2="34.17" y2="44.99"/>
+<g>
+	<path class="st2" d="M88.75,85.55H28.03c-3.1,0-5.64-2.54-5.64-5.64V37.27c0-3.1,2.54-5.64,5.64-5.64h60.71
+		c3.1,0,5.64,2.54,5.64,5.64V79.9C94.39,83.01,91.85,85.55,88.75,85.55z"/>
+	<line class="st1" x1="22.39" y1="48.98" x2="66.34" y2="48.98"/>
+	<line class="st1" x1="69.34" y1="48.98" x2="74.13" y2="48.98"/>
+	<line class="st1" x1="94.39" y1="48.98" x2="77" y2="48.98"/>
+	<rect x="27.09" y="36.02" class="st1" width="62.81" height="8.55"/>
+	<path class="st1" d="M85.12,77.32H57.9c-1.65,0-2.99-1.34-2.99-2.99V59.34c0-1.65,1.34-2.99,2.99-2.99h27.22
+		c1.65,0,2.99,1.34,2.99,2.99v14.99C88.11,75.98,86.77,77.32,85.12,77.32z"/>
+	<line class="st1" x1="28.09" y1="56.35" x2="48.26" y2="56.35"/>
+	<line class="st1" x1="28.09" y1="62.6" x2="40.43" y2="62.6"/>
+	<line class="st1" x1="28.09" y1="69.13" x2="45.37" y2="69.13"/>
+	<line class="st1" x1="28.09" y1="75.89" x2="48.26" y2="75.89"/>
+	<path class="st3" d="M94.96,85.81l-7.9-7.9l3.95-2.96c1.48-1.06,0.99-3.39-0.78-3.88L72.1,66.19c-1.62-0.42-3.11,1.06-2.68,2.68
+		l4.87,18.14c0.49,1.76,2.75,2.19,3.88,0.78l2.96-3.95l7.9,7.9c0.85,0.85,2.26,0.85,3.11,0l2.89-2.89
+		C95.81,88.07,95.81,86.66,94.96,85.81z"/>
+</g>
 </svg>
